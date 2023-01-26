@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: linear-gradient(
+          95deg,
+          #ff8080,
+          #fef498,
+          #fcc0f6,
+          #b891f7,
+          #ffac46
+        );
+        background-size: 700%;
+        background-position: left;
+        animation: animater 20s infinite alternate;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: #fff;
+      }
+      @keyframes animater {
+        0% {
+          background-position: right;
+        }
+        50% {
+          background-position: left;
+        }
+        100% {
+          background-position: right;
+        }
+      }
+      .content {
+        width: auto;
+        padding: 10px;
+        text-align: center;
+        letter-spacing: 3px;
+        border-radius: 30px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.055),
+          rgba(255, 255, 255, 0.068)
+        );
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(8.5px);
+      }
+      .con {
+        display: flex;
+        font-size: 10px;
+        font-weight: 700;
+        justify-content: left;
+      }
+      .inputs {
+        display: flex;
+        font-size: 10px;
+        margin-top: -10px;
+        font-weight: 700;
+        justify-content: left;
+      }
+      i {
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.055),
+          rgba(255, 255, 255, 0.068)
+        );
+
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(8.5px);
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        height: 30px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+      }
+      input {
+        margin-left: 10px;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.055),
+          rgba(255, 255, 255, 0.068)
+        );
+
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(8.5px);
+        border: none;
+        border-radius: 50px;
+        padding: 10px;
+      }
+      button {
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.055),
+          rgba(255, 255, 255, 0.068)
+        );
+
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(8.5px);
+        border: none;
+        border-radius: 50px;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        font-size: 15px;
+        padding: 10px;
+        color: #fff;
+        width: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h2>Log in</h2>
+      <div class="con"><label for="user">| Username</label></div>
+      <br />
+      <div class="inputs">
+        <i class="fas fa-user"></i
+        ><input type="text" name="user" placeholder="Username" />
+      </div>
+      <br />
+      <div class="con"><label for="user">| Password</label></div>
+      <br />
+      <div class="inputs">
+        <i class="fas fa-lock"></i
+        ><input type="password" placeholder="Password" />
+      </div>
+      <br />
+      <a href="index.html"><i class="fas fa-undo" style="color: #fff"></i></a>
+      <button type="submit">submit</button>
+    </div>
+  </body>
+</html>
